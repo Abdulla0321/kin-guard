@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=JetBrains+Mono:wght@400;600&display=swap');
+
+:root{
+  --bg: #0B0F17;
+  --surface: #1E293B;
+  --accent-1: #10B981;
+  --accent-2: #06B6D4;
+  --accent-3: #84CC16;
+  --danger: #EF4444;
+  --muted: #94A3B8;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+html { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+body {
+  margin: 0;
+  background-color: var(--bg);
+  color: #E6EEF8;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Card surface */
+.card {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.6);
+}
+
+/* Utility for small-muted text */
+.muted { color: var(--muted); font-size: 0.9rem }
